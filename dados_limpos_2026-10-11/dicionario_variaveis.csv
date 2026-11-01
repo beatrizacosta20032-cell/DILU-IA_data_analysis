@@ -1,0 +1,210 @@
+﻿tabela,variavel,descricao,valores,tipo_pandas,n_validos,n_em_falta
+respostas,participant_id,"Código de participante (591/592 = respostas do pré dos inscritos 58 e 59, não atribuíveis; 133 = código reconciliado de '113' no turno 3)",inteiro,int64,606,0
+respostas,momento,Momento de medição,"pre, pos (follow a acrescentar)",category,606,0
+respostas,answer_raw,Resposta numérica tal como registada pelo Forms (vírgula decimal perdida),número,float64,606,0
+respostas,strategy_raw,"Estratégia de resolução, texto original",texto,str,606,0
+respostas,exercicio,Exercício de conhecimento,"ex1 (massa), ex2 (volume a adicionar), ex3 (diluição seriada)",str,606,0
+respostas,valor,Resposta numérica usada na cotação,número,float64,606,0
+respostas,estado,Resposta presente ou vazia,"ok, vazia",str,606,0
+respostas,ordem,"k tal que valor = resposta certa × 10^k (±0,5); vazio se não houver relação",inteiro ou vazio,float64,336,270
+respostas,classificacao,Classificação automática da resposta,"certo, errado, errado_unidade, vazia, rever",str,606,0
+respostas,volume_final,Ex2: respondeu o volume final em vez do volume a adicionar (descritivo),0/1; vazio fora do ex2,float64,202,404
+respostas,correct,Resposta certa: cotação principal,0/1,float64,606,0
+respostas,revisao,Categoria da decisão manual (casos 'rever'),"virgula_inequivoca, virgula_ou_unidade, ambiguo, unidade_aceite, nao_interpretavel, erro_calculo, unidade_errada",str,606,0
+respostas,nota,Motivo da decisão manual,texto,str,606,0
+respostas,correct_estrito,Resposta certa sem recuperações (só respostas certas tal como registadas),0/1,float64,606,0
+respostas,correct_ambiguos_inv,Resposta certa com a decisão sobre os ambíguos invertida,0/1,float64,606,0
+respostas,strategy,Estratégia de resolução codificada,"formula, etapas (só ex3), regra3, esquema, tentativa_erro, nao_resolveu, sem_tempo, outro",str,606,0
+respostas,strategy_outro_texto,Texto escrito em 'Outro' na estratégia,texto,str,90,516
+respostas,nao_resolvido,Resposta 0 ou estratégia de não resolução (por instrução da investigadora: não conseguiu resolver em tempo útil); cotada como errada,0/1,int64,606,0
+respostas,resposta_do_pre,No pós: a resposta é a resposta certa do set do pré,0/1; vazio no pré,float64,267,339
+respostas,igual_ao_proprio_pre,No pós: igual à própria resposta do aluno no pré,0/1; vazio no pré,float64,267,339
+respostas,erro_comum,marca erros comuns,"trivial, volume_final, unidade, diluicoes ou vazio",str,606,0
+escalas,participant_id,"Código de participante (591/592 = respostas do pré dos inscritos 58 e 59, não atribuíveis; 133 = código reconciliado de '113' no turno 3)",inteiro,int64,202,0
+escalas,affect_1,PANAS item 1: Interessado/a (afeto positivo),1–5,int64,202,0
+escalas,affect_2,PANAS item 2: Nervoso/a (afeto negativo),1–5,int64,202,0
+escalas,affect_3,PANAS item 3: Entusiasmado/a (afeto positivo),1–5,int64,202,0
+escalas,affect_4,PANAS item 4: Amedrontado/a (afeto negativo),1–5,int64,202,0
+escalas,affect_5,PANAS item 5: Inspirado/a (afeto positivo),1–5,int64,202,0
+escalas,affect_6,PANAS item 6: Ativo/a (afeto positivo),1–5,int64,202,0
+escalas,affect_7,PANAS item 7: Assustado/a (afeto negativo),1–5,int64,202,0
+escalas,affect_8,PANAS item 8: Culpado/a (afeto negativo),1–5,int64,202,0
+escalas,affect_9,PANAS item 9: Determinado/a (afeto positivo),1–5,int64,202,0
+escalas,affect_10,PANAS item 10: Atormentado/a (afeto negativo),1–5,int64,202,0
+escalas,motiv_1,SIMS item 1 (motivacao_intrinseca),1–7,float64,201,1
+escalas,motiv_2,SIMS item 2 (regulacao_identificada),1–7,float64,199,3
+escalas,motiv_3,SIMS item 3 (regulacao_externa),1–7,float64,199,3
+escalas,motiv_4,SIMS item 4 (desmotivacao),1–7,float64,200,2
+escalas,motiv_5,SIMS item 5 (motivacao_intrinseca),1–7,float64,200,2
+escalas,motiv_6,SIMS item 6 (regulacao_identificada),1–7,float64,199,3
+escalas,motiv_7,SIMS item 7 (regulacao_externa),1–7,float64,199,3
+escalas,motiv_8,SIMS item 8 (desmotivacao),1–7,float64,200,2
+escalas,motiv_9,SIMS item 9 (motivacao_intrinseca),1–7,float64,200,2
+escalas,motiv_10,SIMS item 10 (regulacao_identificada),1–7,float64,199,3
+escalas,motiv_11,SIMS item 11 (regulacao_externa),1–7,float64,200,2
+escalas,motiv_12,SIMS item 12 (desmotivacao),1–7,float64,200,2
+escalas,motiv_13,SIMS item 13 (motivacao_intrinseca),1–7,float64,200,2
+escalas,motiv_14,SIMS item 14 (regulacao_identificada),1–7,float64,200,2
+escalas,motiv_15,SIMS item 15 (regulacao_externa),1–7,float64,199,3
+escalas,motiv_16,SIMS item 16 (desmotivacao),1–7,float64,198,4
+escalas,momento,Momento de medição,"pre, pos (follow a acrescentar)",category,202,0
+escalas,AP,PANAS: afeto positivo (soma de 5 itens),5–25,int64,202,0
+escalas,AN,PANAS: afeto negativo (soma de 5 itens),5–25,int64,202,0
+escalas,motivacao_intrinseca,SIMS: motivação intrínseca (média de 4 itens),1–7,float64,200,2
+escalas,regulacao_identificada,SIMS: regulação identificada (média de 4 itens),1–7,float64,197,5
+escalas,regulacao_externa,SIMS: regulação externa (média de 4 itens),1–7,float64,197,5
+escalas,desmotivacao,SIMS: desmotivação (média de 4 itens),1–7,float64,198,4
+participantes,participant_id,"Código de participante (591/592 = respostas do pré dos inscritos 58 e 59, não atribuíveis; 133 = código reconciliado de '113' no turno 3)",inteiro,int64,115,0
+participantes,tem_pre,Tem questionário pré,0/1,int64,115,0
+participantes,tem_pos,Tem questionário pós,0/1,int64,115,0
+participantes,par_pre_pos,Tem pré e pós emparelháveis (amostra da análise primária),0/1,int64,115,0
+participantes,nao_emparelhavel,Código partilhado em simultâneo no pré (58/59); pré e pós não atribuíveis,0/1,int64,115,0
+participantes,turno,"Turno da sessão de 21/09, atribuído pela hora de início do pré (ou do pós, se não houver pré)","1, 2, 3",float64,115,0
+participantes,gender,"Género (opções do formulário: Masculino, Feminino, Outro, Prefiro não responder; todos responderam Feminino ou Masculino)","0 = feminino, 1 = masculino",float64,113,2
+participantes,prior_education,"Já tem um grau superior (opções do formulário: Ensino Secundário, Licenciatura, Mestrado, Doutoramento)","0 = ensino secundário, 1 = licenciatura ou superior",float64,113,2
+participantes,digital_confort,Conforto com videojogos e plataformas digitais,escala 1–5,float64,113,2
+participantes,ia_confort,Conforto com ferramentas de inteligência artificial,escala 1–5,float64,113,2
+participantes,pre_fill_time,Tempo de preenchimento do pré,minutos,float64,113,2
+participantes,pos_fill_time,Tempo de preenchimento do pós,minutos,float64,89,26
+participantes,pos_fora_sessao,Pós terminado fora da sessão,0/1,float64,89,26
+participantes,pos_sem_tempo,Indicou no pós que não teve tempo de responder aos exercícios,0/1,float64,89,26
+participantes,SUS,"System Usability Scale: [Σ(ímpares − 1) + Σ(5 − pares)] × 2,5",0–100,float64,89,26
+participantes,sus1,SUS item 1 (positivo),1–5,float64,89,26
+participantes,sus2,SUS item 2 (negativo),1–5,float64,89,26
+participantes,sus3,SUS item 3 (positivo),1–5,float64,89,26
+participantes,sus4,SUS item 4 (negativo),1–5,float64,89,26
+participantes,sus5,SUS item 5 (positivo),1–5,float64,89,26
+participantes,sus6,SUS item 6 (negativo),1–5,float64,89,26
+participantes,sus7,SUS item 7 (positivo),1–5,float64,89,26
+participantes,sus8,SUS item 8 (negativo),1–5,float64,89,26
+participantes,sus9,SUS item 9 (positivo),1–5,float64,89,26
+participantes,sus10,SUS item 10 (negativo),1–5,float64,89,26
+participantes,game_results,Texto dos resultados do jogo colado pelo aluno (original),texto,str,72,43
+participantes,game_finished,Terminou o jogo (laboratório salvo),1 = sim; 0 = explosão ou não terminou; vazio = sem dados,float64,65,50
+participantes,final_level,Nível em que o jogo terminou,"1, 2, 3",float64,65,50
+participantes,arrived_level3,Chegou ao nível 3 (diluições seriadas),0/1,float64,65,50
+participantes,xp,XP final (deduzido por erros na versão usada; não permite contar exercícios),número,float64,63,52
+participantes,estabilidade,Estabilidade final do laboratório,%,float64,64,51
+participantes,game_time_min,Tempo de jogo da última tentativa (reinicia com recarga),minutos,float64,62,53
+participantes,lp_level1,N.º de exercícios do nível 1 em que o botão do LabPartner foi clicado,0–3,float64,61,54
+participantes,lp_level2,N.º de exercícios do nível 2 em que o botão do LabPartner foi clicado,0–3,float64,61,54
+participantes,lp_level3,N.º de exercícios do nível 3 em que o botão do LabPartner foi clicado,0–3,float64,61,54
+participantes,lp_total,Soma de lp_level1–3,0–9,float64,61,54
+participantes,lp_pct,"lp_total / (3 × final_level) × 100 (mínimo, para quem recarregou)",0–100 %,float64,61,54
+participantes,provavel_recarga,game_time_min < 5 (indicador descritivo),0/1,float64,62,53
+participantes,nota_jogo,Motivo da classificação manual do resultado do jogo,texto,str,89,26
+participantes,labpartner_function,"Pergunta 'Durante o jogo, o LabPartner:', texto original (escolha múltipla)",texto,str,89,26
+participantes,lp_deu_codigo,LabPartner deu o código antes de resolver os exercícios,0/1,float64,89,26
+participantes,lp_fez_calculos,LabPartner fez cálculos sem o aluno explicar o raciocínio,0/1,float64,89,26
+participantes,lp_confuso,LabPartner deu respostas confusas ou contraditórias,0/1,float64,89,26
+participantes,lp_funcionou_bem,LabPartner funcionou bem (nada de estranho),0/1,float64,89,26
+participantes,lp_problema,"Pelo menos um problema pedagógico (código, cálculos, confuso)",0/1,float64,89,26
+participantes,lp_outro_texto,Texto escrito em 'Outro',texto,str,16,99
+participantes,lp_outro_cat,Codificação indutiva do 'Outro',"problema_tecnico, nao_usou, outro",str,16,99
+participantes,lp_problema_tecnico,'Outro': o LabPartner não funcionou / foi lento,0/1,float64,89,26
+participantes,lp_nao_usou,'Outro': não usou o LabPartner,0/1,float64,89,26
+participantes,lp_outro,'Outro' não codificado,0/1,float64,89,26
+participantes,general_comment,Comentários gerais sobre a experiência,texto,str,20,95
+participantes,positive_comment,Principais aspetos positivos do jogo,texto,str,89,26
+participantes,negative_comment,Principais aspetos negativos ou limitações do jogo,texto,str,89,26
+participantes,suspeita_colaboracao,"um par de alunos é sinalizado se, no mesmo momento, partilha ≥ 1 resposta invulgar dada por 2 ou 3 alunos, está no mesmo turno e submeteu com ≤ 5 minutos de diferença. É sinalizado o aluno que pertence a pelo menos um par sinalizado. A análise principal inclui todos; a sensibilidade S2 exclui os sinalizados.",0/1,int64,115,0
+mestra,participant_id,"Código de participante (591/592 = respostas do pré dos inscritos 58 e 59, não atribuíveis; 133 = código reconciliado de '113' no turno 3)",inteiro,int64,202,0
+mestra,momento,Momento de medição,"pre, pos (follow a acrescentar)",category,202,0
+mestra,conhecimento,N.º de exercícios certos (cotação principal),0–3,float64,202,0
+mestra,conhecimento_estrito,N.º de exercícios certos (cotação estrita),0–3,float64,202,0
+mestra,conhecimento_amb_inv,N.º de exercícios certos (ambíguos invertidos),0–3,float64,202,0
+mestra,n_nao_resolvidos,N.º de exercícios não resolvidos,0–3,int64,202,0
+mestra,AP,PANAS: afeto positivo (soma de 5 itens),5–25,int64,202,0
+mestra,AN,PANAS: afeto negativo (soma de 5 itens),5–25,int64,202,0
+mestra,motivacao_intrinseca,SIMS: motivação intrínseca (média de 4 itens),1–7,float64,200,2
+mestra,regulacao_identificada,SIMS: regulação identificada (média de 4 itens),1–7,float64,197,5
+mestra,regulacao_externa,SIMS: regulação externa (média de 4 itens),1–7,float64,197,5
+mestra,desmotivacao,SIMS: desmotivação (média de 4 itens),1–7,float64,198,4
+mestra,fill_in_time,Tempo de preenchimento do questionário nesse momento,minutos,float64,202,0
+mestra,turno,"Turno da sessão de 21/09, atribuído pela hora de início do pré (ou do pós, se não houver pré)","1, 2, 3",float64,202,0
+larga,participant_id,"Código de participante (591/592 = respostas do pré dos inscritos 58 e 59, não atribuíveis; 133 = código reconciliado de '113' no turno 3)",inteiro,int64,115,0
+larga,tem_pre,Tem questionário pré,0/1,int64,115,0
+larga,tem_pos,Tem questionário pós,0/1,int64,115,0
+larga,par_pre_pos,Tem pré e pós emparelháveis (amostra da análise primária),0/1,int64,115,0
+larga,nao_emparelhavel,Código partilhado em simultâneo no pré (58/59); pré e pós não atribuíveis,0/1,int64,115,0
+larga,turno,"Turno da sessão de 21/09, atribuído pela hora de início do pré (ou do pós, se não houver pré)","1, 2, 3",float64,115,0
+larga,gender,"Género (opções do formulário: Masculino, Feminino, Outro, Prefiro não responder; todos responderam Feminino ou Masculino)","0 = feminino, 1 = masculino",float64,113,2
+larga,prior_education,"Já tem um grau superior (opções do formulário: Ensino Secundário, Licenciatura, Mestrado, Doutoramento)","0 = ensino secundário, 1 = licenciatura ou superior",float64,113,2
+larga,digital_confort,Conforto com videojogos e plataformas digitais,escala 1–5,float64,113,2
+larga,ia_confort,Conforto com ferramentas de inteligência artificial,escala 1–5,float64,113,2
+larga,pre_fill_time,Tempo de preenchimento do pré,minutos,float64,113,2
+larga,pos_fill_time,Tempo de preenchimento do pós,minutos,float64,89,26
+larga,pos_fora_sessao,Pós terminado fora da sessão,0/1,float64,89,26
+larga,pos_sem_tempo,Indicou no pós que não teve tempo de responder aos exercícios,0/1,float64,89,26
+larga,SUS,"System Usability Scale: [Σ(ímpares − 1) + Σ(5 − pares)] × 2,5",0–100,float64,89,26
+larga,sus1,SUS item 1 (positivo),1–5,float64,89,26
+larga,sus2,SUS item 2 (negativo),1–5,float64,89,26
+larga,sus3,SUS item 3 (positivo),1–5,float64,89,26
+larga,sus4,SUS item 4 (negativo),1–5,float64,89,26
+larga,sus5,SUS item 5 (positivo),1–5,float64,89,26
+larga,sus6,SUS item 6 (negativo),1–5,float64,89,26
+larga,sus7,SUS item 7 (positivo),1–5,float64,89,26
+larga,sus8,SUS item 8 (negativo),1–5,float64,89,26
+larga,sus9,SUS item 9 (positivo),1–5,float64,89,26
+larga,sus10,SUS item 10 (negativo),1–5,float64,89,26
+larga,game_results,Texto dos resultados do jogo colado pelo aluno (original),texto,str,72,43
+larga,game_finished,Terminou o jogo (laboratório salvo),1 = sim; 0 = explosão ou não terminou; vazio = sem dados,float64,65,50
+larga,final_level,Nível em que o jogo terminou,"1, 2, 3",float64,65,50
+larga,arrived_level3,Chegou ao nível 3 (diluições seriadas),0/1,float64,65,50
+larga,xp,XP final (deduzido por erros na versão usada; não permite contar exercícios),número,float64,63,52
+larga,estabilidade,Estabilidade final do laboratório,%,float64,64,51
+larga,game_time_min,Tempo de jogo da última tentativa (reinicia com recarga),minutos,float64,62,53
+larga,lp_level1,N.º de exercícios do nível 1 em que o botão do LabPartner foi clicado,0–3,float64,61,54
+larga,lp_level2,N.º de exercícios do nível 2 em que o botão do LabPartner foi clicado,0–3,float64,61,54
+larga,lp_level3,N.º de exercícios do nível 3 em que o botão do LabPartner foi clicado,0–3,float64,61,54
+larga,lp_total,Soma de lp_level1–3,0–9,float64,61,54
+larga,lp_pct,"lp_total / (3 × final_level) × 100 (mínimo, para quem recarregou)",0–100 %,float64,61,54
+larga,provavel_recarga,game_time_min < 5 (indicador descritivo),0/1,float64,62,53
+larga,nota_jogo,Motivo da classificação manual do resultado do jogo,texto,str,89,26
+larga,labpartner_function,"Pergunta 'Durante o jogo, o LabPartner:', texto original (escolha múltipla)",texto,str,89,26
+larga,lp_deu_codigo,LabPartner deu o código antes de resolver os exercícios,0/1,float64,89,26
+larga,lp_fez_calculos,LabPartner fez cálculos sem o aluno explicar o raciocínio,0/1,float64,89,26
+larga,lp_confuso,LabPartner deu respostas confusas ou contraditórias,0/1,float64,89,26
+larga,lp_funcionou_bem,LabPartner funcionou bem (nada de estranho),0/1,float64,89,26
+larga,lp_problema,"Pelo menos um problema pedagógico (código, cálculos, confuso)",0/1,float64,89,26
+larga,lp_outro_texto,Texto escrito em 'Outro',texto,str,16,99
+larga,lp_outro_cat,Codificação indutiva do 'Outro',"problema_tecnico, nao_usou, outro",str,16,99
+larga,lp_problema_tecnico,'Outro': o LabPartner não funcionou / foi lento,0/1,float64,89,26
+larga,lp_nao_usou,'Outro': não usou o LabPartner,0/1,float64,89,26
+larga,lp_outro,'Outro' não codificado,0/1,float64,89,26
+larga,general_comment,Comentários gerais sobre a experiência,texto,str,20,95
+larga,positive_comment,Principais aspetos positivos do jogo,texto,str,89,26
+larga,negative_comment,Principais aspetos negativos ou limitações do jogo,texto,str,89,26
+larga,suspeita_colaboracao,"um par de alunos é sinalizado se, no mesmo momento, partilha ≥ 1 resposta invulgar dada por 2 ou 3 alunos, está no mesmo turno e submeteu com ≤ 5 minutos de diferença. É sinalizado o aluno que pertence a pelo menos um par sinalizado. A análise principal inclui todos; a sensibilidade S2 exclui os sinalizados.",0/1,int64,115,0
+larga,conhecimento_pos,N.º de exercícios certos (cotação principal) (pós),0–3,float64,89,26
+larga,conhecimento_pre,N.º de exercícios certos (cotação principal) (pré),0–3,float64,113,2
+larga,conhecimento_estrito_pos,N.º de exercícios certos (cotação estrita) (pós),0–3,float64,89,26
+larga,conhecimento_estrito_pre,N.º de exercícios certos (cotação estrita) (pré),0–3,float64,113,2
+larga,conhecimento_amb_inv_pos,N.º de exercícios certos (ambíguos invertidos) (pós),0–3,float64,89,26
+larga,conhecimento_amb_inv_pre,N.º de exercícios certos (ambíguos invertidos) (pré),0–3,float64,113,2
+larga,n_nao_resolvidos_pos,N.º de exercícios não resolvidos (pós),0–3,float64,89,26
+larga,n_nao_resolvidos_pre,N.º de exercícios não resolvidos (pré),0–3,float64,113,2
+larga,AP_pos,PANAS: afeto positivo (soma de 5 itens) (pós),5–25,float64,89,26
+larga,AP_pre,PANAS: afeto positivo (soma de 5 itens) (pré),5–25,float64,113,2
+larga,AN_pos,PANAS: afeto negativo (soma de 5 itens) (pós),5–25,float64,89,26
+larga,AN_pre,PANAS: afeto negativo (soma de 5 itens) (pré),5–25,float64,113,2
+larga,motivacao_intrinseca_pos,SIMS: motivação intrínseca (média de 4 itens) (pós),1–7,float64,89,26
+larga,motivacao_intrinseca_pre,SIMS: motivação intrínseca (média de 4 itens) (pré),1–7,float64,111,4
+larga,regulacao_identificada_pos,SIMS: regulação identificada (média de 4 itens) (pós),1–7,float64,89,26
+larga,regulacao_identificada_pre,SIMS: regulação identificada (média de 4 itens) (pré),1–7,float64,108,7
+larga,regulacao_externa_pos,SIMS: regulação externa (média de 4 itens) (pós),1–7,float64,89,26
+larga,regulacao_externa_pre,SIMS: regulação externa (média de 4 itens) (pré),1–7,float64,108,7
+larga,desmotivacao_pos,SIMS: desmotivação (média de 4 itens) (pós),1–7,float64,89,26
+larga,desmotivacao_pre,SIMS: desmotivação (média de 4 itens) (pré),1–7,float64,109,6
+larga,delta_conhecimento,Diferença pós − pré: N.º de exercícios certos (cotação principal),pós − pré,float64,87,28
+larga,delta_conhecimento_estrito,Diferença pós − pré: N.º de exercícios certos (cotação estrita),pós − pré,float64,87,28
+larga,delta_conhecimento_amb_inv,Diferença pós − pré: N.º de exercícios certos (ambíguos invertidos),pós − pré,float64,87,28
+larga,delta_n_nao_resolvidos,Diferença pós − pré: N.º de exercícios não resolvidos,pós − pré,float64,87,28
+larga,delta_AP,Diferença pós − pré: PANAS: afeto positivo (soma de 5 itens),pós − pré,float64,87,28
+larga,delta_AN,Diferença pós − pré: PANAS: afeto negativo (soma de 5 itens),pós − pré,float64,87,28
+larga,delta_motivacao_intrinseca,Diferença pós − pré: SIMS: motivação intrínseca (média de 4 itens),pós − pré,float64,86,29
+larga,delta_regulacao_identificada,Diferença pós − pré: SIMS: regulação identificada (média de 4 itens),pós − pré,float64,83,32
+larga,delta_regulacao_externa,Diferença pós − pré: SIMS: regulação externa (média de 4 itens),pós − pré,float64,84,31
+larga,delta_desmotivacao,Diferença pós − pré: SIMS: desmotivação (média de 4 itens),pós − pré,float64,85,30
+larga,sem_resolucao_pre,Nenhum exercício resolvido no pré,0/1,float64,113,2
+larga,sem_resolucao_pos,Nenhum exercício resolvido no pós,0/1,float64,89,26
